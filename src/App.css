@@ -1,0 +1,90 @@
+.custom-header {
+  max-width: 100%;
+  margin: 0 auto;
+  height: 70px;
+}
+
+.custom-header .navbar-nav .nav-link {
+  padding: 0 15px;
+  font-size: 16px;
+}
+
+.nav-link:hover {
+  color: aliceblue!important;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+}
+
+body {
+  padding-top: 70px; /* Espacio superior para que el contenido no se sobreponga con el header */
+}
+
+/* ABOUT ME */
+
+.fotoPerfil {
+  border-radius: 2%;
+}
+
+
+/* PROYECTOS */
+
+#proyectosRow {
+  margin-top: 50px;
+}
+
+.card {
+  border: none!important;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* FOOTER */
+
+.footer-section {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-section img {
+  max-width: 150px;
+}
+
+.footer-section p {
+  margin: 10px 0;
+  color: #6c757d;
+}
+
+.footer-section .list-inline {
+  padding: 0;
+  margin: 10px 0;
+}
+
+.footer-section .list-inline-item {
+  margin-right: 15px;
+}
+
+.footer-section .list-item a {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.footer-section .list-item a:hover {
+  color: aliceblue;
+}
+
+ul.list {
+  width: 150px;
+  margin: 0;
+}
