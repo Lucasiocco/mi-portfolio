@@ -96,7 +96,7 @@ const Portfolio = () => {
                                 <div className="card-body">
                                     <h5 className="card-title">RekonMedia</h5>
                                     <p className="card-text">Bootstrap - Javascript - Firebase</p>
-                                    <a href="https://github.com/Lucasiocco/RekonMedia" target="_blank">Ver Codigo</a>
+                                    <a href="https://github.com/Lucasiocco/RekonMedia" target="_blank" rel="noopener noreferrer">Ver Codigo</a>
                                 </div>
                             </div>
                         </div>
@@ -106,7 +106,7 @@ const Portfolio = () => {
                                 <div className="card-body">
                                     <h5 className="card-title">CoreClub</h5>
                                     <p className="card-text">Bootstrap - Javascript - ReactJs</p>
-                                    <a href="https://github.com/Lucasiocco/ioccocoreclub" target="_blank">Ver Codigo</a>
+                                    <a href="https://github.com/Lucasiocco/ioccocoreclub" target="_blank" rel="noopener noreferrer">Ver Codigo</a>
                                 </div>
                             </div>
                         </div>
@@ -116,7 +116,7 @@ const Portfolio = () => {
                                 <div className="card-body">
                                     <h5 className="card-title">UrbanClothes</h5>
                                     <p className="card-text">Bootstrap - Javascript - ReactJs</p>
-                                    <a href="https://github.com/Lucasiocco/ProyectoEcommerce" target="_blank">Ver Codigo</a>
+                                    <a href="https://github.com/Lucasiocco/ProyectoEcommerce" target="_blank" rel="noopener noreferrer">Ver Codigo</a>
                                 </div>
                             </div>
                         </div>
@@ -126,7 +126,7 @@ const Portfolio = () => {
                                 <div className="card-body">
                                     <h5 className="card-title">Calculadora</h5>
                                     <p className="card-text">Bootstrap - Javascript - Python</p>
-                                    <a href="https://github.com/Lucasiocco/CalculadoraPy" target="_blank">Ver Codigo</a>
+                                    <a href="https://github.com/Lucasiocco/CalculadoraPy" target="_blank" rel="noopener noreferrer">Ver Codigo</a>
                                 </div>
                             </div>
                         </div>
