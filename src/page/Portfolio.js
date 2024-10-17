@@ -38,7 +38,7 @@ const Portfolio = () => {
             {/* Hero Section */}
             <section id="hero" className="hero-section text-center bg-dark text-white py-5">
                 <div className="container">
-                    <h1>Bienvenidos a mi Portfolio</h1>
+                    <h1>Bienvenidos a mi Portfolio_</h1>
                     <img src="./img/laptopwave.png" alt="Logo" className="mb-3" style={{ width: '250px' }} />
                     <ReactTyped style={{ display: 'block' }}
                         strings={[
@@ -58,18 +58,18 @@ const Portfolio = () => {
             {/* About Me Section */}
             <section id="about" className="about-me-section py-5">
                 <div className="container text-center">
-                    <h2 className="text-center mb-4">Sobre mí</h2>
+                    <h2 className="text-center mb-4">Sobre mí_</h2>
                     <div className='row justify-content-center'>
-                        <div className='col-lg-3 lg-3'>
+                        <div className='col-lg-3 lg-3 p-2'>
                             <img src="./img/fotoPerfil.jpg" alt="About Me" className="fotoPerfil" style={{ width: '250px', height: '250px' }} />
                         </div>
-                        <div className='col-lg-4 lg-4'>
-                            <p>¡Hola, soy Lucas!</p>
+                        <div className='col-lg-4 lg-4 p-2'>
+                            <p><b>¡Hola, soy Lucas!</b></p>
                             <p>Durante los últimos años, he sido desarrollador front-end y actualmente estoy ampliando mi conjunto de habilidades para incluir el desarrollo back-end. Soy una persona autodidacta, apasionada y responsable.</p>
                             <p>En mis tiempos libres me gusta hacer actividad fisica, soy un apasionado del deporte. Pero ojo que tambien le dedido un tiempo a ver alguna serie/pelicula que tengo ahi en el cajon de recomendados.</p>
                         </div>
-                        <div className='col-lg-3 lg-3'>
-                            <p>Mi stack tecnologico:</p>
+                        <div className='col-lg-3 lg-3 p-2'>
+                            <p><b>Mi stack tecnologico:</b></p>
                             <img src="./img/html.png" alt="html"/>
                             <img src="./img/css.png" alt="css"/>
                             <img src="./img/javascript.png" alt="js"/>
@@ -88,7 +88,7 @@ const Portfolio = () => {
             {/* Projects Section */}
             <section id="projects" className="projects-section py-5 bg-light">
                 <div className="container">
-                    <h2 className="text-center mb-4">Proyectos</h2>
+                    <h2 className="text-center mb-4">Proyectos_</h2>
                     <div className="row justify-content-around" id='proyectosRow'>
                         <div className="col-md-5 mb-5">
                             <div className="card">
@@ -138,7 +138,7 @@ const Portfolio = () => {
             {/* Contact Section */}
             <section id="contact" className="contact-section py-5 text-center">
                 <div className="container">
-                    <h2>Contacto</h2>
+                    <h2>Contacto_</h2>
                     <p>Sígueme en mis redes sociales:</p>
                     <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="mx-2">
                         <FontAwesomeIcon icon={faTwitter} size="2x" />
@@ -152,14 +152,17 @@ const Portfolio = () => {
                 </div>
             </section>
             <footer className="footer-section bg-dark py-4">
-                <div className="container text-center d-flex align-items-center justify-content-between">
+                <div className="container text-center d-flex align-items-center justify-content-between" id='footer'>
                     {/* Imagen */}
-                    <img src="./img/stickerFooter.png" alt="Logo" className="mb-3" style={{ width: '200px' }} />
-
+                    <div className='imagenF'>
+                    <img src="./img/stickerFooter.png" alt="Logo" className="imagenF" style={{ width: '200px' }} />
+                    </div>
                     {/* Texto de Copyright */}
-                    <p>&copy; 2024 Lucas Iocco. Todos los derechos reservados.</p>
-
+                    <div className='derechos'>
+                    <p className='derechos'>&copy; 2024 Lucas Iocco. Todos los derechos reservados.</p>
+                    </div>
                     {/* Enlaces de Navegación */}
+                    <div className='lista'>
                     <ul className="list">
                         <li className="list-item">
                             <a href="#hero">Inicio</a>
@@ -174,6 +177,7 @@ const Portfolio = () => {
                             <a href="#contact">Contacto</a>
                         </li>
                     </ul>
+                    </div>
                 </div>
             </footer>
         </div>

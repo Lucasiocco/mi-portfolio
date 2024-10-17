@@ -85,6 +85,21 @@ body {
 }
 
 ul.list {
-  width: 150px;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0!important;
+  padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .imagenF img{
+    width: 100px!important;
+  }
+  .derechos p {
+    font-size: 10px;
+  }
+  .lista a {
+    font-size: 10px;
+  }
 }
