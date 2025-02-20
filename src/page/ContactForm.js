@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
+    const form = useRef();
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -11,36 +13,35 @@ const ContactForm = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setStatus('sending');
+
         try {
-            const response = await fetch('php/contact.php', {
-                method: 'POST',
-                body: JSON.stringify(formData),
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            });
-            
-            const data = await response.json();
-            
-            if (data.success) {
+            const result = await emailjs.sendForm(
+                'service_portfolio', // Reemplaza con tu Service ID de EmailJS
+                'template_portfolio', // Reemplaza con tu Template ID
+                form.current,
+                'vQvmmMREzDUieQgwl' // Reemplaza con tu Public Key
+            );
+
+            if (result.status === 200) {
                 setStatus('success');
                 setFormData({ name: '', email: '', subject: '', message: '' });
-            } else {
-                setStatus('error');
             }
         } catch (error) {
+            console.error('Error:', error);
             setStatus('error');
         }
     };
 
     return (
         <div className="contact-form-container">
-            <form onSubmit={handleSubmit} className="contact-form">
+            <form ref={form} onSubmit={handleSubmit} className="contact-form">
                 <div className="row g-4">
                     <div className="col-md-6">
                         <div className="form-group">
                             <input 
                                 type="text"
+                                name="user_name" // Este nombre debe coincidir con tu plantilla EmailJS
                                 className="form-control"
                                 placeholder="Tu nombre"
                                 value={formData.name}
@@ -53,6 +54,7 @@ const ContactForm = () => {
                         <div className="form-group">
                             <input 
                                 type="email"
+                                name="user_email" // Este nombre debe coincidir con tu plantilla EmailJS
                                 className="form-control"
                                 placeholder="Tu email"
                                 value={formData.email}
@@ -65,6 +67,7 @@ const ContactForm = () => {
                         <div className="form-group">
                             <input 
                                 type="text"
+                                name="subject" // Este nombre debe coincidir con tu plantilla EmailJS
                                 className="form-control"
                                 placeholder="Asunto"
                                 value={formData.subject}
@@ -76,6 +79,7 @@ const ContactForm = () => {
                     <div className="col-12">
                         <div className="form-group">
                             <textarea 
+                                name="message" // Este nombre debe coincidir con tu plantilla EmailJS
                                 className="form-control"
                                 rows="5"
                                 placeholder="Tu mensaje"
@@ -86,8 +90,12 @@ const ContactForm = () => {
                         </div>
                     </div>
                     <div className="col-12">
-                        <button type="submit" className="btn btn-primary">
-                            Enviar Mensaje
+                        <button 
+                            type="submit" 
+                            className="btn btn-primary"
+                            disabled={status === 'sending'}
+                        >
+                            {status === 'sending' ? 'Enviando...' : 'Enviar Mensaje'}
                         </button>
                     </div>
                 </div>

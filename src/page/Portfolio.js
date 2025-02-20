@@ -77,7 +77,7 @@ const Portfolio = () => {
                         <div className="col-lg-5 mb-4 mb-lg-0">
                             <div className="about-image-container">
                                 <img
-                                    src="./img/fotoPerfil.jpg"
+                                    src="./img/fotoPerfil.png"
                                     alt="Lucas Nahuel Iocco"
                                     className="about-image"
                                 />
@@ -153,7 +153,7 @@ const Portfolio = () => {
                             <div className="card">
                                 <img src="./img/rekonMedia.png" className="card-img-top" alt="Proyecto 1" />
                                 <div className="card-body">
-                                    <h5 className="card-title">RekonMedia</h5>
+                                    <h5 className="card-title">RekonMedia - Landing Page</h5>
                                     <p className="card-text">Bootstrap - Javascript - Firebase</p>
                                     <a href="https://github.com/Lucasiocco/RekonMedia" target="_blank" rel="noopener noreferrer">Ver Codigo</a>
                                 </div>
@@ -163,7 +163,7 @@ const Portfolio = () => {
                             <div className="card">
                                 <img src="./img/electroX.png" className="card-img-top" alt="Proyecto 1" />
                                 <div className="card-body">
-                                    <h5 className="card-title">electroX</h5>
+                                    <h5 className="card-title">electroX - Catalogo</h5>
                                     <p className="card-text">Bootstrap - Javascript - PHP</p>
                                     <div>
                                         <a className="card-link" href="https://github.com/Lucasiocco/electroX" target="_blank" rel="noopener noreferrer">Ver Codigo</a>
@@ -176,7 +176,7 @@ const Portfolio = () => {
                             <div className="card">
                                 <img src="./img/urbanC.png" className="card-img-top" alt="Proyecto 1" />
                                 <div className="card-body">
-                                    <h5 className="card-title">UrbanClothes</h5>
+                                    <h5 className="card-title">UrbanClothes - Ecommerce</h5>
                                     <p className="card-text">Bootstrap - Javascript - ReactJs</p>
                                     <a href="https://github.com/Lucasiocco/ProyectoEcommerce" target="_blank" rel="noopener noreferrer">Ver Codigo</a>
                                 </div>
@@ -186,7 +186,7 @@ const Portfolio = () => {
                             <div className="card">
                                 <img src="./img/calculadoraPy.png" className="card-img-top" alt="Proyecto 1" />
                                 <div className="card-body">
-                                    <h5 className="card-title">Calculadora</h5>
+                                    <h5 className="card-title">Calculadora con Anotador</h5>
                                     <p className="card-text">Bootstrap - Javascript - Python</p>
                                     <a href="https://github.com/Lucasiocco/CalculadoraPy" target="_blank" rel="noopener noreferrer">Ver Codigo</a>
                                 </div>

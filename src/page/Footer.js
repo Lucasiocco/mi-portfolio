@@ -46,15 +46,6 @@ const Footer = () => {
                             </ul>
                         </div>
 
-                        {/* Logo */}
-                        <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                            <img
-                                src="./img/stickerFooter.png"
-                                alt="Lucas Nahuel Iocco"
-                                className="about-image"
-                                style={{ width: '150px' }}
-                            />
-                        </div>
                     </div>
 
                 </div>
